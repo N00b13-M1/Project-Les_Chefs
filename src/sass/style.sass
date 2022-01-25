@@ -1,0 +1,293 @@
+@import ./_fonts
+@import ./_icons
+@import ./_variables
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+
+*
+    margin:0
+
+header
+    width: 100%
+    height: 100%
+    background: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../../public/img/banner1.jpg")
+    background-repeat: no-repeat
+    background-position: bottom left
+    background-size: cover
+    position: relative
+
+    li
+        width: 140px
+        a
+            &:hover
+                background-color: rgb(196,44,64) !important
+    
+    .carousel
+        height: 100% !important
+        .carousel-indicators
+            bottom: -25px !important
+            
+            .circle
+                border-radius: 50%
+            
+            .circle.active
+                display: flex
+                justify-content: center
+                align-items: center
+                .halo
+                    width: 10px
+                    height: 10px
+                    background-color: rgba(39, 38, 58, 0.5)
+                    border-radius: 50%
+                    
+            
+
+            #but
+                border-radius: 50%
+                width: 10px
+                height: 10px
+                border: 2px solid white
+
+        .carousel-inner
+            h1
+                font-size: 40px
+                font-family: 'Courgette'
+
+                .size1
+                    font-size: 60px
+
+            .button
+                .btn-1
+                    border-radius: 50px
+                    border-color: white !important
+                .btn-2
+                    background-color: rgb(175,40,59) !important
+                    border-color: rgb(175,40,59) !important
+                    border-radius: 50px 
+
+    .banner-bot
+        background-image: url(../../public/img/bottom_decoration_img.png)
+        width: 100%
+        height: 14px
+        background-repeat: repeat-x
+        position: absolute
+        bottom: 0
+        left: 0
+
+
+.story
+    width: 100%
+    height: 100%
+    background: url("../../public/img/main_bg.jpg")
+    background-repeat-y: repeat
+    background-repeat-x: repeat
+
+    h2
+        font-size: 30px
+        font-family: 'Courgette'
+
+        .bold3
+            font-size: 50px
+            color: rgb(175,40,59)
+
+    .menu
+
+
+        .nav-link
+                color: rgb(205,205,205)
+                border-bottom: 2px solid rgb(205,205,205)
+                borger-right: 2px solid rgb(205,205,205)
+                font-family: 'Courgette'
+                background-color: transparent
+
+                &:hover
+                    border-right: 5px solid rgb(196,43,62)
+
+                    i
+                        color: rgb(196,43,62)
+
+                p
+                    font-size: 20px
+                    font-family: 'Courgette'
+                    color: black
+
+        .tab-content
+            .meal
+                border-bottom: 1px dotted rgb(205,205,205) !important
+                border-left: 1px solid rgb(205,205,205) !important
+
+                .meal-border
+                    border: 4px solid rgb(205,205,205)
+                
+                .meal-price
+                    background-color: rgb(239,239,239)
+
+
+    .menu-list.list-left
+        border-left: 2px solid rgb(205,205,205)
+    .menu-list
+    
+        .coffee-price
+            background: rgb(215,216,215)
+            color: rgb(196,43,62)
+        
+    
+    
+.chefs
+    width: 100%
+    background: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../../public/img/team_background.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+
+    h2
+        font-size: 30px
+        font-family: 'Courgette'
+        color: white
+
+        .bold3
+            font-size: 50px
+            color: rgb(175,40,59)
+    
+    .row-chefs
+            .card 
+                border: none !important
+                img
+                    border-bottom: 2px solid grey !important
+
+
+.reservation
+    width: 100%
+    background: url("../../public/img/main_bg.jpg")
+    background-repeat-y: repeat
+    background-repeat-x: repeat
+
+    .container-fluid
+
+        .row-top
+            h2
+            font-size: 30px
+            font-family: 'Courgette'
+            color: black
+
+        .booking
+            .container-fluid
+                .form
+                background: url("../../public/img/book_table_bg.jpg")
+                background-size: cover
+                width: 100%
+                height: 100%
+                position: center
+                border-radius: 15px
+    
+
+
+            input
+                border-radius: 15px
+                width: 240px
+                border: 1px solid black
+    
+            .dropdown
+                border-radius: 15px
+                width: 240px
+                color: grey !important
+                border: 1px solid black
+
+        .blog
+
+            .row-bot
+                .col-10
+                    height: 455px
+                    z-index: 1
+        
+                    .card
+                        .card-body
+                            position: relative
+                            top: -45px
+                            p:first-child
+                                border-radius: 15px
+                .button
+                    z-index: 5
+                
+
+        .row-bottom
+
+    
+
+.testimonials      
+    width: 100%
+    background: linear-gradient(rgba(38, 38, 58, 0.7),rgba(39, 38, 48, 0.6)), url("../../public/img/testimonials_background.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom right
+
+    .row-top
+        h2
+            font-size: 30px
+            font-family: 'Courgette'
+            color: white
+
+    .row-bot
+        .text
+            border-radius: 10px
+
+        
+
+.contact-us
+    width: 100%
+    height: 100%
+    background: url("../../public/img/main_bg.jpg")
+    background-repeat-y: repeat
+    background-repeat-x: repeat
+    .container-fluid
+        .row
+            .title
+                font-size: 30px
+                font-family: 'Courgette'
+                color: white
+
+            .contact
+                border-radius:15px
+            
+                .fa-phone
+                    transform: rotate(90deg)
+
+                p   
+                    color: white
+
+
+footer
+    position: relative
+    .row-top
+        width: 100%
+        height: 14px
+        background: url("../../public/img/footer_bottom_decoration_img.png")
+        position: absolute
+        top: 0
+        left: 0
+
+    .row-mid
+        width: 100%
+        height: 100%
+        background: url("../../public/img/footer_background.jpg")
+        background-size: cover
+        background-position: center center 
+
+        .container-fluid
+            .row-socials
+                .logo
+                    width: 13% !important
+
+    .row-bot
+        height: 100px
+        background-color: rgb(175,40,59)
+        width: 100%
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px)
+/* Media Query for Tablets */
+@media (min-width: 481px) and (max-width: 769px) 
+/* Media Query for Tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1023px) 
+/* Media Query for Desktop*/   
+@media (min-width: 1024px) 
+         
